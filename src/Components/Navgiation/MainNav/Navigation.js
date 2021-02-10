@@ -4,12 +4,20 @@ import "./Navigation.css";
 
 function Avater({ userName, ...props }) {
   const [user, setUser] = useState(false);
+
+  function openUserProfile() {
+    setUser(true);
+    setTimeout(() => {
+      setUser(false);
+    }, 2000);
+  }
+
   return (
     <div
       className="user"
-      onMouseOver={() => setUser(true)}
-      onMouseLeave={() => setUser(false)}
-      onClick={() => setUser(prev => !prev)}
+      // onMouseOver={() => setUser(true)}
+      // onMouseLeave={() => setUser(false)}
+      onClick={openUserProfile}
     >
       <div className="avatar">{userName.toUpperCase().slice(0, 1)}</div>
       <p>{userName}</p>

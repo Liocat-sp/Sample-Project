@@ -17,4 +17,10 @@
     width: 30px;
     fill: rgb(40, 160, 182);
     margin-right: 12px;
+    transition: transform 200ms ease-in-out;
+}
+.action:hover .addIcon,
+.addIcon:hover {
+    fill: rgb(4, 66, 77);
+    transform: rotate(90deg);
 }

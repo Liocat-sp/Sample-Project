@@ -7,7 +7,6 @@ function Link (props) {
     <div className="link-wrapper">
       <div className={`mainSideBar-link ${props.active && "mainSideBar-link-active"}`}></div>
     </div>
-
   );
 }
 
